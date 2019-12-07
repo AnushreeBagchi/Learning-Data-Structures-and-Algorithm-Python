@@ -2,15 +2,11 @@ def smallest_positive(in_list):
     # TODO: Define a control structure that finds the smallest positive
     # number in in_list and returns the correct smallest number.
 
-    temp = in_list[0];
-    
+    temp = -1;
+        
     for i, value in enumerate (in_list):
-        if value > 0:
-            temp = value;
-            break;
-    
-            
-    for i, value in enumerate (in_list):
+        if(temp < 0 and value > 0):
+            temp = value
         if(value < temp and value > 0):
             temp = value
     
