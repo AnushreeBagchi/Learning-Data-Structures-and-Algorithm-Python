@@ -1,4 +1,3 @@
-# implement_stack_python
 
 class Stack:
     def __init__(self):
