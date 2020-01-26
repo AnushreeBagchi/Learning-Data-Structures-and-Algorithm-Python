@@ -10,7 +10,7 @@ def staircase(num):
     return staircase(num-1)+staircase(num-2)+staircase(num-3)
 
 # caching the output to get faster implementation of the function
-def staircase_with_hashmap(num):
+def staircase_with_caching(num):
     num_dict = dict({})
     return staircase_faster(num,num_dict)
 
@@ -42,4 +42,4 @@ def staircase_faster(num,num_dict ):
     
 
 
-print(staircase_with_hashmap(3))
+print(staircase_with_caching(3))
